@@ -2,7 +2,6 @@
         //单击选中的单元格
         let selectTd;
         let titleData = [
-            "留言类型",
             "电话",
             "地址",
             "IP",
