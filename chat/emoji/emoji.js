@@ -70,13 +70,13 @@ var sdEditorEmoj = {
                 num++;
                 var emclassf = 'em' + num + '-';
                 emojiContainer.append('<section class="for-' + emojilist + '"></section>');
-                faceDiv.find('.emoji-tab').append('<a href="javascript:void(0);" data-target="for-' + emojilist + '">' + emojiconfig[emojilist].name + '</a>');
+                faceDiv.find('.emoji-tab').append('<a href="javascript:void(0);"　 data-target="for-' + emojilist + '">' + emojiconfig[emojilist].name + '</a>');
                 for (var i = 0; i <= maxNum; i++) {
                     imgName = emojiconfig[emojilist].imgName[i];
                     imgName = imgName.substring(0, imgName.length - 4);
                     emclass = emclassf + imgName;
                     if (emojiContainer.find('.for-' + emojilist) !== undefined) {
-                        var c = '<a unselectable="on" href="javascript:void(0);" class="embox"><span data-src="'
+                        var c = '<a unselectable="on" href="javascript:void(0);"  class="embox"><span data-src="'
                             + emojiconfig[emojilist].path + emojiconfig[emojilist].imgName[i] + '" class="em ' + emclass + '" data-alias="'
                             + (emojiconfig[emojilist].alias[i] == undefined ? '' : emojiconfig[emojilist].alias[i]) + '" title="'
                             + (emojiconfig[emojilist].title[i] == undefined ? (emojiconfig[emojilist].empty) : emojiconfig[emojilist].title[i]) + '">' + emojiconfig[emojilist].alias[i] + '</span></a>';
@@ -84,9 +84,10 @@ var sdEditorEmoj = {
                     }
                 }
             }
-            // faceDivShowHide();
         }
-
+        $('.embox').click(function () {
+            $(".faceDivBox").fadeOut();
+        })
         $(".contentBox,.faceDiv").click(function () {
             return false;
         });
