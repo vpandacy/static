@@ -371,7 +371,7 @@ color: #fff;line-height: 50px;text-align: center;border-radius: 100px;z-index:9;
 .f16{font-size: 16px;}
 
 [v-cloak]{display:none;}
-html{overflow:auto !important;}
+/*html{overflow:auto !important;}*/
 .imgMakeArea {min-width: 1170px;margin: 0 auto;margin-bottom: 0px;margin-bottom: 30px;overflow: hidden;}
 .column{float:left;/*width:32%;*/margin-right:15px;padding:10px;background-color:#FFFFFF;min-height:740px;
         padding-bottom: 1644px;margin-bottom: -1644px;}   
